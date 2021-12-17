@@ -5,7 +5,7 @@ declare interface Connection {
 /**
  * A signal with similar functionality to Roblox's built-in BindableEvents
  */
-declare class Signal<T extends Array<unknown>> {
+declare class Signal<T extends Array<unknown> = []> {
 	/**
 	 * Create a new Signal
 	 */
