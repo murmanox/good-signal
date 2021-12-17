@@ -1,0 +1,25 @@
+{
+  "name": "@rbxts/good-signal",
+  "version": "1.0.0",
+  "description": "A signal library for roblox",
+  "main": "src/init.lua",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "types": "src/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^1.2.3-types.1",
+    "@rbxts/types": "^1.0.557"
+  }
+}
