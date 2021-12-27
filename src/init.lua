@@ -85,6 +85,7 @@ end
 
 -- Define camel case methods
 Connection.disconnect = Connection.Disconnect
+Connection.Destroy = Connection.Disconnect
 
 -- Make Connection strict
 setmetatable(Connection, {

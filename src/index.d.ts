@@ -1,5 +1,10 @@
 declare interface Connection {
 	disconnect(): void
+
+	/**
+	 * Alias for disconnect
+	 */
+	Destroy(): void
 }
 
 /**
@@ -33,9 +38,5 @@ declare class Signal<T extends Array<unknown> = []> {
 	 */
 	disconnectAll(): void
 }
-
-// declare interface SignalConstructor {
-// 	new <T extends Array<unknown>>(): Signal<T>
-// }
 
 export = Signal
